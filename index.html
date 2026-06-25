@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Filter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Product Filtering System</h1>
+
+    <div class="filter-buttons">
+
+        <!-- <button onclick="filterProducts('all')">
+            All
+        </button>
+
+        <button onclick="filterProducts('laptop')">
+            Laptops
+        </button>
+
+        <button onclick="filterProducts('mobile')">
+            Mobiles
+        </button>
+
+        <button onclick="filterProducts('headphone')">
+            Headphones
+        </button> -->
+
+        <button class="filter-btn active" onclick="filterProducts('all',this)">
+            All
+        </button>
+
+        <button class="filter-btn" onclick="filterProducts('laptop',this)">
+            Laptops
+        </button>
+
+        <button class="filter-btn" onclick="filterProducts('mobile',this)">
+            Mobiles
+        </button>
+
+        <button class="filter-btn" onclick="filterProducts('headphone',this)">
+            Headphones
+        </button>
+
+    </div>
+
+    <div class="products" id="products">
+
+        <div class="card" data-category="laptop">
+            <h2>MacBook Air</h2>
+            <p>Laptop</p>
+        </div>
+
+        <div class="card" data-category="mobile">
+            <h2>iPhone 15</h2>
+            <p>Mobile</p>
+        </div>
+
+        <div class="card" data-category="headphone">
+            <h2>AirPods Pro</h2>
+            <p>Headphone</p>
+        </div>
+
+        <div class="card" data-category="laptop">
+            <h2>Dell XPS</h2>
+            <p>Laptop</p>
+        </div>
+
+        <div class="card" data-category="mobile">
+            <h2>Samsung S24</h2>
+            <p>Mobile</p>
+        </div>
+
+        <div class="card" data-category="headphone">
+            <h2>Sony WH-1000XM5</h2>
+            <p>Headphone</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
